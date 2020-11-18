@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Spartan:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+div {
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  background-color: #333;
+}
+
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  font-size: 0.8em;
+  color: #fff;
+  margin: 15px auto 30px auto;
+}
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+.footer i {
+  color: #fff;
+}
+.footer i:hover {
+  color: red;
+}
+
+#quote-box {
+  position: relative;
+  border-radius: 3px;
+  width: 450px;
+  display: table;
+  background-color: #fff;
+  padding: 40px 50px;
+}
+#quote-box #text {
+  text-align: center;
+  width: 450px;
+  height: auto;
+  clear: both;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.75em;
+}
+#quote-box #text i {
+  font-size: 1em;
+  margin-right: 0.4em;
+}
+#quote-box #author {
+  width: 450px;
+  height: auto;
+  clear: both;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: right;
+}
+#quote-box .buttons {
+  width: 450px;
+  height: auto;
+  display: block;
+}
+#quote-box .buttons .btn {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+#quote-box .buttons .btn:hover {
+  opacity: 0.9;
+}
+#quote-box .buttons .btn#tweet-quote {
+  float: left;
+  padding: 0;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 5px;
+  height: 30px;
+  width: 40px;
+}
+#quote-box .buttons .btn#new-quote {
+  float: right;
+  font-family: 'Montserrat', sans-serif;
+}
