@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6;
+  font-family: "Open Sans", sans-serif;
+}
+
+.AppWrap {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-width: 1100px;
+}
+
+.EditorWrap {
+  margin-left: 10%;
+  width: 50%;
+  align-self: flex-start;
+}
+
+.EditorWrap .toolbar {
+  background: #333;
+  color: #fff;
+  width: 100%;
+  font-family: "Lora", serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 400px;
+  padding: 7px 15px;
+  border-radius: 3px 3px 0 0;
+}
+
+.EditorWrap #editor {
+  height: 60vh;
+  width: 80%;
+  padding: 10px 15px;
+  width: 400px;
+  height: 100vh;
+  resize: none;
+}
+
+input:focus,
+textarea {
+  outline: none !important;
+}
+
+.PreviewWrap {
+  width: 50%;
+}
+
+.PreviewWrap .toolbar {
+  background: #333;
+  color: #fff;
+  width: 80%;
+  font-family: "Lora", serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 7px 15px;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.PreviewerWrap #previewer {
+  width: 80%;
+  height: 75vh;
+  min-height: 550px;
+  background: white;
+  overflow: auto;
+  padding: 0px 15px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 15px 15px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Lora", serif;
+  min-width: 1100px;
+}
+
+@media screen and (max-device-width: 414px), screen and (max-width: 414px) {
+  .AppWrap {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+  }
+
+  .EditorWrap {
+    min-width: 100px;
+    margin-left: 17.5vw;
+    margin-top: 0px;
+  }
+
+  .EditorWrap .toolbar {
+    width: 60vw;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .EditorWrap #editor {
+    width: 60vw;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    min-width: 100px;
+    min-height: 200px;
+    height: 25vh;
+  }
+
+  .PreviewerWrap {
+    margin-top: 10px;
+    min-width: 100px;
+  }
+
+  .PreviewerWrap .toolbar {
+    width: 80vw;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+
+  .PreviewerWrap #previewer {
+    width: 80vw;
+    height: 35vh;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    min-height: 300px;
+  }
+
+  .title {
+    margin-top: 10px;
+    min-width: 100px;
+  }
+}
