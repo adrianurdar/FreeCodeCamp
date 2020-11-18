@@ -1,0 +1,63 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+button:hover {
+  color: #a50d0d;
+}
+
+.title {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-around;
+}
+
+.TimerLengthControl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 16px;
+}
+.TimerLengthControl .subtitle {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  padding: 16px;
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
