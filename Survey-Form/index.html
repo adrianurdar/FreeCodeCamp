@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC: Survey Form - Restaurant Survey</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id="title">
+    We appreciate your comments:
+</h1>
+<div id="holder">
+    <p id="description">Please take a moment to rate the following areas of service at our restaurant</p>
+    <form id="survey-form">
+        <div class="leftColumn">
+            <div class="labels">
+                <label id="name-label" for="name">
+                    * Your name:
+                </label>
+            </div>
+            <div class="rightColumn">
+                <input type="text" name="name" id="name" class="input-field" placeholder="Please enter your name" required>
+            </div>
+        </div>
+        <div class="leftColumn">
+            <div class="labels">
+                <label id="email-label" for="email">
+                    * Your email:
+                </label>
+            </div>
+            <div class="rightColumn">
+                <input type="email" name="email" id="email" class="input-field" placeholder="Please enter your email" required>
+            </div>
+        </div>
+        <div class="leftColumn">
+            <div class="labels">
+                <label id="number-label" for="tableNumber">
+                    * Your table number:
+                </label>
+            </div>
+            <div class="rightColumn">
+                <input type="number" name="tableNumber" id="number" min="1" max="20" class="input-field" placeholder="Please enter your table number" required>
+            </div>
+        </div>
+        <div class="leftColumn">
+            <div class="labels">
+                <label for="ratings">Please rate our Overall Services</label>
+            </div>
+            <div class="rightColumn">
+                <select id="dropdown" name="ratings" class="dropdown">
+                    <option disabled selected value>Select an option</option>
+                    <option value="excelent">Excelent</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+            </div>
+        </div>
+        <div class="leftColumn">
+            <div class="labels">
+                <label for="userRating">How likely is that you would recommend our restaurant to a friend?</label>
+            </div>
+            <div class="rightColumn">
+                <ul style="list-style: none;">
+                    <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="userRatings"> Definitely</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="userRatings"> Maybe</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings"> Not at all</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="leftColumn">
+            <div class="labels">
+                <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+            </div>
+            <div class="rightColumn">
+                <ul id="preferences" style="list-style: none;">
+                    <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings"> Greeting</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings"> Seating arrangement</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings"> Service</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings"> Food</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings"> Ambiance</label></li>
+                    <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings"> Overall experience</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="leftColumn">
+            <div class="labels">
+                <label for="most-like">Where did you hear about us?</label>
+            </div>
+            <div class="rightColumn">
+                <select id="dropdown" name="referal" class="dropdown">
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Internet</option>
+                    <option value="projects">Friends</option>
+                    <option value="community">News</option>
+                    <option value="openSource">Advertising</option>
+                </select>
+            </div>
+        </div>
+        <div class="leftColumn">
+            <div class="labels">
+                <label for="comments">We welcome any additional comments you may have, positive or negative and any ideas of how we can improve.</label>
+            </div>
+            <div class="rightColumn">
+                <textarea id="comments" class="input-field" style="height:200px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+        <button id="submit" type="submit">SUBMIT</button>
+    </form>
+  </div>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>
